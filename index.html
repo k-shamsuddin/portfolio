@@ -13,6 +13,13 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
+            <!-- Theme Toggle Switch -->
+<label class="theme-switch"></label>
+<!-- Theme Toggle Button -->
+<button id="theme-toggle-btn" class="theme-btn" onclick="toggleTheme()" aria-label="Toggle Dark Mode">
+  <i class="fa-solid fa-sun"></i>   <!-- default icon -->
+</button>
+
             <div class="nav-brand">
                 <span class="brand-text">KSA</span>
             </div>
@@ -253,7 +260,7 @@
                         <div class="skill-item">
                             <i class="fas fa-server"></i>
                             <span>Nginx</span>
-                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -262,6 +269,10 @@
                         <div class="skill-item">
                             <i class="fas fa-chart-line"></i>
                             <span>CloudWatch</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>SonarQube</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-terminal"></i>
@@ -484,5 +495,33 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+  // same logic as before, plus icon update
+  document.addEventListener("DOMContentLoaded", () => {
+    const currentTheme = localStorage.getItem("theme") || "light";
+    setTheme(currentTheme);
+  });
+
+  function toggleTheme() {
+    const newTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+  }
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+
+    // change icon
+    const icon = document.querySelector('#theme-toggle-btn i');
+    if (theme === "dark") {
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+    } else {
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    }
+  }
+</script>
+
 </body>
 </html>
