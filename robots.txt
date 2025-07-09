@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://shamsuddin-devops.site/sitemap.xml
+
