@@ -1,39 +1,76 @@
 /* CSS Custom Properties */
 :root {
     /* Light Theme */
-    --primary-color: #722F37;
-    --secondary-color: #F8BBD9;
-    --background-dark: #f7f7f7;
-    --background-light: #ffffff;
+    --primary-color: #37474F; /* Blue-Gray */
+    --secondary-color: #26C6DA; /* Cyan */
+    --background-dark: #F9FAFB;
+    --background-light: #FFFFFF;
     --card-background: #ffffff;
-    --text-primary: #121212;
-    --text-secondary: #444444;
-    --text-muted: #888888;
+    --text-primary: #1E293B; /* Dark Gray */
+    --text-secondary: #475569; /* Medium Gray */
+    --text-muted: #94A3B8; /* Soft Gray */
     --accent-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.05);
     --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.1);
     --shadow-heavy: 0 15px 35px rgba(0, 0, 0, 0.15);
+    --border-light: rgba(0, 0, 0, 0.1);
     --border-radius: 12px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
+
 [data-theme="dark"] {
-    --primary-color: #F8BBD9;
-    --secondary-color: #722F37;
-    --background-dark: #0f0f0f;
-    --background-light: #1a1a1a;
-    --card-background: #252525;
-    --text-primary: #ffffff;
-    --text-secondary: #b3b3b3;
-    --text-muted: #888888;
+    --primary-color: #26C6DA; /* Cyan */
+    --secondary-color: #37474F; /* Blue-Gray */
+    --background-dark: #0D1117; /* GitHub Dark */
+    --background-light: #1E1E1E;
+    --card-background: #1E1E1E;
+    --text-primary: #E2E8F0; /* Light Gray */
+    --text-secondary: #94A3B8; /* Muted Gray */
+    --text-muted: #64748B; /* Dim Gray */
     --accent-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
     --shadow-heavy: 0 15px 35px rgba(0, 0, 0, 0.2);
+    --border-light: rgba(255, 255, 255, 0.1);
     --border-radius: 12px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
+
+/* =============================
+   Auto System Theme Detection
+   ============================= */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #26C6DA;
+        --secondary-color: #37474F;
+        --background-dark: #0D1117;
+        --background-light: #1E1E1E;
+        --background-secondary: #161B22;
+        --card-background: #1E1E1E;
+        --text-primary: #E2E8F0;
+        --text-secondary: #94A3B8;
+        --text-muted: #64748B;
+        --accent-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+        --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
+        --shadow-heavy: 0 15px 35px rgba(0, 0, 0, 0.2);
+        --border-light: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* =============================
+   Accessibility Enhancements
+   ============================= */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+
 
 /* Reset and Base Styles */
 * {
@@ -131,14 +168,21 @@ a {
 
 /* Navigation */
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: var(--background-light); /* follows theme */
+    color: var(--text-primary);
     border-bottom: 1px solid var(--border-light);
-    z-index: 1000;
     transition: var(--transition);
+}
+
+.navbar a {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+}
+
+.navbar a:hover {
+    color: var(--secondary-color); /* accent on hover */
 }
 
 .navbar.scrolled {
@@ -434,7 +478,9 @@ section {
 
 /* About Section */
 .about {
-    background: var(--background-secondary);
+    position: relative;
+    z-index: 1; /* ensures it sits above hero */
+    margin-top: 120px; /* pushes About Me down, adjust as needed */
 }
 
 .about-content {
@@ -1204,18 +1250,34 @@ section {
     z-index: 9999;
 }
 
-.loading-spinner {
-    width: 50px;
-    height: 50px;
-    border: 3px solid rgba(248, 187, 217, 0.3);
-    border-top: 3px solid var(--primary-color);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+.devops-loader {
+    position: relative;
+    width: 80px;
+    height: 40px;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.devops-loader::before,
+.devops-loader::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: loop-spin 1.5s linear infinite;
+}
+
+.devops-loader::after {
+    left: 40px;
+    animation-delay: -0.75s; /* offset for infinity effect */
+}
+
+@keyframes loop-spin {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(0.7); }
+    100% { transform: rotate(360deg) scale(1); }
 }
 
 /* Scroll Progress Bar */

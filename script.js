@@ -489,7 +489,7 @@ function createParticleBackground() {
         
         draw() {
             ctx.globalAlpha = this.opacity;
-            ctx.fillStyle = '#F8BBD9';
+            ctx.fillStyle = '#398bbaff';
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
             ctx.fill();
