@@ -147,3 +147,37 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 sections.forEach(sec => sectionObserver.observe(sec));
+
+/* ==========================================
+   INTERACTIVE 3D PROFILE PIC
+   ========================================== */
+const profileCard = document.querySelector('.profile-card-3d');
+const profileInner = document.querySelector('.profile-card-inner');
+const profileGlare = document.querySelector('.profile-glare');
+
+if (profileCard && profileInner && profileGlare) {
+  profileCard.addEventListener('mousemove', (e) => {
+    const rect = profileCard.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    // Calculate rotation (-10 to 10 degrees)
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
+    
+    // Calculate glare position
+    const glareX = (x / rect.width) * 100;
+    const glareY = (y / rect.height) * 100;
+
+    profileInner.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    profileGlare.style.opacity = '1';
+    profileGlare.style.background = `radial-gradient(circle at ${glareX}% ${glareY}%, rgba(255,255,255,0.2), transparent 60%)`;
+  });
+
+  profileCard.addEventListener('mouseleave', () => {
+    profileInner.style.transform = `rotateX(0deg) rotateY(0deg)`;
+    profileGlare.style.opacity = '0';
+  });
+}
