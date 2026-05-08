@@ -1,635 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khaja Shamsuddin Ahmed - Cloud & DevOps Engineer</title>
-    <meta name="description" content="Portfolio of Khaja Shamsuddin Ahmed, Cloud & DevOps Engineer with expertise in cloud computing, automation, and continuous delivery.">
-    <meta name="description" content="Portfolio of Khaja Shamsuddin - DevOps Engineer skilled in AWS, CI/CD, Docker, Kubernetes.">
-    <meta name="description" content="Portfolio">
-<meta name="keywords" content="Khaja Shamsuddin, DevOps, AWS, Docker, Kubernetes, Cloud Engineer, SRE, CI/CD, Shamsuddin, k-shamsuddin, KSA">
-<meta name="author" content="Khaja Shamsuddin">
-<meta property="og:title" content="Khaja Shamsuddin Ahmed Personal Portfolio">
-<meta property="og:description" content="Tap to open ">
-<meta property="og:image" content="https://Shamsuddin-devops.site/image/profile2.JPG">
-<meta property="og:url" content="https://Shamsuddin-devops.site/">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:type" content="website">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="image/profile2.JPG" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khaja Shamsuddin Ahmed — Cloud & DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Khaja Shamsuddin Ahmed, Cloud & DevOps Engineer with expertise in AWS, Docker, Kubernetes, Terraform, and CI/CD automation.">
+  <meta name="keywords" content="Khaja Shamsuddin, DevOps, AWS, Docker, Kubernetes, Cloud Engineer, CI/CD, Terraform, Ansible">
+  <meta name="author" content="Khaja Shamsuddin Ahmed">
+  <meta property="og:title" content="Khaja Shamsuddin Ahmed — Cloud & DevOps Engineer">
+  <meta property="og:description" content="Cloud & DevOps Engineer based in Dubai, UAE.">
+  <meta property="og:image" content="https://Shamsuddin-devops.site/image/profile2.JPG">
+  <meta property="og:url" content="https://Shamsuddin-devops.site/">
+  <meta property="og:type" content="website">
+  <link rel="shortcut icon" href="image/profile2.JPG" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <!-- Theme Toggle Switch -->
-<label class="theme-switch"></label>
-<!-- Theme Toggle Button -->
-<button id="theme-toggle-btn" class="theme-btn" onclick="toggleTheme()" aria-label="Toggle Dark Mode">
-  <i class="fa-solid fa-sun"></i>   <!-- default icon -->
-</button>
 
-            <div class="nav-brand">
-                <span class="brand-text">KSA</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+  <!-- STATUS BAR -->
+  <div class="status-bar">
+    <span class="status-dot"></span>
+    <span>currently:</span>
+    <strong>available for work</strong>
+    <span class="sep">·</span>
+    <span>based in Dubai, UAE</span>
+  </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="greeting">Hello, I'm</span>
-                        <span class="name">Khaja Shamsuddin Ahmed</span>
-                    </h1>
-                    <p class="hero-subtitle"> Cloud & DevOps Engineer</p>
-                    <p class="hero-description">
-                        Passionate about cloud computing, automation, and continuous delivery. 
-                        Transforming infrastructure through modern DevOps practices.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="assets/Khaja_Shamsuddin_Ahmed_DevOps_Resume.pdf" class="btn btn-secondary" id="download-resume">
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
-                    </div>
-                    <div class="hero-social">
-                        <a href="https://www.linkedin.com/in/khaja-shamsuddin-ahmed" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/k-shamsuddin/" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:k.shamsuddin.a@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="hero-avatar">
-                        <div class="avatar-placeholder">
-                            <img src="image/profile.png" alt="Your Avatar" style="width: 225px; height: 225px; border-radius: 50%; object-fit: cover;">
-                        </div>
-                        <div class="floating-icons">
-                            <div class="floating-icon" style="--delay: 0s;">
-                                <i class="fab fa-aws"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 1s;">
-                                <i class="fab fa-docker"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 2s;">
-                                <i class="fas fa-cube"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 3s;">
-                                <i class="fab fa-jenkins"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <a href="#about" class="scroll-indicator">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know more about my journey and expertise</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="about-card">
-                        <h3>Objective</h3>
-                        <p>Khaja Shamsuddin Ahmed is focused on building a successful career as a DevOps Engineer by mastering cloud-native technologies, infrastructure automation, and continuous delivery pipelines. He aims to contribute to the development of innovative, scalable, and reliable software systems by leveraging modern DevOps tools and industry best practices. His long-term objective is to progress into a Cloud Architect and technical leadership role, designing and delivering high-performing infrastructure solutions that empower engineering teams and drive business transformation. Committed to lifelong learning and collaboration, he consistently strives to deliver tangible value through technology.
-
-</p>
-                    </div>
-                    <div class="about-card">
-                        <h3>Professional Summary</h3>
-                        <ul class="about-list">
-                            <li>1+ year of hands-on experience in Cloud & DevOps</li>
-                            <li>Proficient with AWS services (EC2, S3, IAM, VPC, Route53, etc.)</li>
-                            <li>Experience with Jenkins, Docker, Kubernetes, Ansible, Terraform</li>
-                            <li>Familiar with monitoring (CloudWatch), scripting (Bash), and CI/CD pipelines</li>
-                            <li>Strong understanding of DevOps practices, continuous integration, deployment, and cloud operations.</li>
-                            <li>Familiar with real-world DevOps workflows, including version control, automated testing, container deployment, and cloud monitoring with a strong foundation in problem-solving and collaborative delivery.</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h4>1+</h4>
-                            <p>Year Experience</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h4>3+</h4>
-                            <p>Certification</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h4>3+</h4>
-                            <p>Projects</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technical Skills</h2>
-                <p class="section-subtitle">Technologies and tools I work with</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Cloud Platforms</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>EC2</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>S3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>IAM</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-network-wired"></i>
-                            <span>VPC</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-route"></i>
-                            <span>Route53</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>DevOps Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-jenkins"></i>
-                            <span>Jenkins</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-dharmachakra"></i>
-                            <span>Kubernetes</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cogs"></i>
-                            <span>Ansible</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cube"></i>
-                            <span>Terraform</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Development & Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cubes"></i>
-                            <span>Maven</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-linux"></i>
-                            <span>Linux</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>Apache</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>Nginx</span>
-                    </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Monitoring & Scripting</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>CloudWatch</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-search"></i>
-                            <span>SonarQube</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-terminal"></i>
-                            <span>Bash</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-code-branch"></i>
-                            <span>CI/CD</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Some of my recent work and implementations</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <h3>Pace Healthcare App</h3>
-                    </div>
-                    <p class="project-description">
-                        Developed and deployed a scalable and secure cloud infrastructure for a comprehensive healthcare application, ensuring high availability and fault tolerance. Leveraged AWS services such as EC2, RDS (MySQL), S3, VPC, Elastic Load Balancer (ELB), and CloudWatch for monitoring and performance tracking. Used Terraform to implement Infrastructure as Code (IaC), allowing consistent and repeatable environment provisioning. Applied Ansible for automated server configuration and application deployment, ensuring seamless scalability and reduced manual intervention. Containerized application components using Docker, enabling isolated, portable environments across development and production stages. Configured Route 53 for DNS management and implemented IAM roles and security groups to enforce strict access control. The project significantly improved deployment efficiency, operational consistency, and the overall security posture of the healthcare system.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Terraform</span>
-                        <span class="tech-tag">Ansible</span>
-                        <span class="tech-tag">Kubernetes</span>
-                    </div>
-                   <!-- <div class="project-links">
-                        <a href="https://github.com/k-shamsuddin/" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div> -->
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-code-branch"></i>
-                        </div>
-                        <h3>CI/CD Pipeline for Java Application</h3>
-                    </div>
-                    <p class="project-description">
-                        Developed and deployed a robust CI/CD pipeline leveraging Jenkins, GitHub, Maven, Docker, and AWS EC2 to automate the build, test, and deployment lifecycle of a Java-based application. Integrated GitHub for source control and Jenkins for orchestrating builds and deployments. Configured Maven for dependency management and Docker for containerizing the application. Set up automated testing, code quality checks, and environment-based approvals. Implemented versioned builds and rollback mechanisms to ensure high availability. Resulted in reducing deployment time to under 5 minutes and significantly enhancing release reliability and team productivity.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Jenkins</span>
-                        <span class="tech-tag">GitHub</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Amazon EC2</span>
-                        <span class="tech-tag">Maven</span>
-                    </div>
-                   <!-- <div class="project-links">
-                        <a href="https://github.com/k-shamsuddin/" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div> -->
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-life-ring"></i>
-                        </div>
-                        <h3>Cloud Tech Support Project</h3>
-                    </div>
-                    <p class="project-description">
-                        Delivered first-level technical support across diverse environments including Windows, Linux, and MacOS. Responded to and resolved user-reported issues related to software, hardware, and cloud-based systems. Performed installation, configuration, and updates of operating systems and enterprise applications. Maintained IT infrastructure by addressing incidents involving system performance, network connectivity, and user access. Ensured proper documentation and escalation of unresolved issues to higher-tier support. Maintained user satisfaction through structured troubleshooting, timely resolution, and clear communication across support channels.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Linux</span>
-                        <span class="tech-tag">Windows</span>
-                        <span class="tech-tag">Diagnostics</span>
-                        <span class="tech-tag">Troubleshooting</span>
-                    </div>
-                  <!--  <div class="project-links">
-                        <a href="https://github.com/k-shamsuddin/" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-<section id="experience" class="experience">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Work Experience</h2>
-            <p class="section-subtitle">My professional journey and achievements</p>
-        </div>
-        <div class="experience-content">
-            <div class="timeline">
-                <!-- Full-time Cloud & DevOps Engineer -->
-                <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-        <div class="experience-card">
-            <div class="experience-header">
-                <h3>Cloud & DevOps Engineer</h3>
-                <span class="company">V2R Technologies Pvt Ltd</span>
-                <span class="duration">Jul 2024 – Present</span>
-            </div>
-            <div class="experience-description">
-                <p>Delivering scalable cloud infrastructure and DevOps solutions to improve deployment speed, infrastructure reliability, and development workflow efficiency.</p>
-                <ul>
-                    <li>Designed and deployed AWS infrastructure using Terraform for EC2, RDS, ELB, and Route 53</li>
-                    <li>Developed CI/CD pipelines using Jenkins and GitHub Actions, reducing deployment time from 30 to under 5 minutes</li>
-                    <li>Created Ansible playbooks for consistent server provisioning and application configuration</li>
-                    <li>Containerized applications with Docker and deployed on EC2 and Kubernetes (EKS)</li>
-                    <li>Managed high availability and DNS routing through AWS Route 53</li>
-                    <li>Collaborated with development teams to streamline agile releases and improve incident response</li>
-                </ul>
-            </div>
-        </div>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">ksa.</a>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-                </div>
-            </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#about" class="mobile-link">about</a>
+      <a href="#skills" class="mobile-link">skills</a>
+      <a href="#projects" class="mobile-link">projects</a>
+      <a href="#experience" class="mobile-link">experience</a>
+      <a href="#contact" class="mobile-link">contact</a>
+    </div>
+  </nav>
 
-            <!-- Certifications Section -->
-            <div class="certifications">
-                <h3>Certifications</h3>
-
-                <div class="cert-item">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="cert-content">
-                        <h4>AWS Cloud & DevOps Fundamentals</h4>
-                        <p>Cloud@247.ai</p>
-                    </div>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="cert-content">
-                        <h4>
-                            <a href="https://www.credly.com/badges/2614d014-4d10-4113-90ed-ae664fb6df87" target="_blank" rel="noopener noreferrer">
-                                AWS Cloud Quest: Cloud Practitioner
-                            </a>
-                        </h4>
-                        <p>AWS Skill Builder</p>
-                    </div>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="cert-content">
-                        <h4>
-                            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_7Fy5qqEM8v3C2S9TP_1752053913058_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">
-                                Data Analytics
-                            </a>
-                        </h4>
-                        <p>Deloitte x Forage</p>
-                    </div>
-                </div>
-         </div>
-      
-   </div>
-   <div class="education">
-                    <h3>Education</h3>
-                    <div class="edu-item">
-                        <div class="edu-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="edu-content">
-                            <h4>B.Com (Computer Applications)</h4>
-                            <p>Osmania University, 2024</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- HERO -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-layout">
+        <!-- Left: Text -->
+        <div class="hero-text-col">
+          <h2 class="hero-name reveal">Khaja Shamsuddin Ahmed</h2>
+          <h1 class="hero-title reveal">
+            Something has<br>
+            built here.<br>
+            <em>It's ready to deploy.</em>
+          </h1>
+          <p class="hero-role reveal">cloud &amp; devops engineer</p>
+          <p class="hero-desc reveal">
+            Passionate about building scalable cloud infrastructure, automated delivery pipelines,
+            and reliable distributed systems — from EC2 to Kubernetes and beyond.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="https://wa.me/971542350052?text=Hey%20Khaja%20Shamsuddin!" target="_blank" class="btn btn-whatsapp">
+              <i class="fab fa-whatsapp"></i> let's chat
+            </a>
+            <a href="assets/Khaja_Shamsuddin_Ahmed_DevOps_Resume.pdf" class="btn btn-primary" id="download-resume" download>
+              <i class="fas fa-download"></i> download resume
+            </a>
+          </div>
+          <div class="social-row reveal">
+            <a href="https://www.linkedin.com/in/khaja-shamsuddin-ahmed" target="_blank" class="social-pill">
+              <i class="fab fa-linkedin-in"></i> khaja-shamsuddin-ahmed
+            </a>
+            <a href="https://github.com/k-shamsuddin/" target="_blank" class="social-pill">
+              <i class="fab fa-github"></i> k-shamsuddin
+            </a>
+            <a href="mailto:k.shamsuddin.a@gmail.com" class="social-pill">
+              <i class="fas fa-envelope"></i> k.shamsuddin.a@gmail.com
+            </a>
+          </div>
         </div>
-</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's discuss opportunities and collaborate</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <a href="mailto:k.shamsuddin.a@gmail.com">k.shamsuddin.a@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <a href="tel:+971542350052">+971 54-235-0052</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <span>Dubai, UAE</span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/khaja-shamsuddin-ahmed" target="_blank">Connect with me</a>
-                        </div>
-                    </div>
+        <!-- Right: Isometric Cloud Art -->
+        <div class="hero-robot-col reveal">
+          <div class="iso-wrapper">
+            <div class="iso-ecosystem">
+              <div class="iso-plane">
+                <!-- SVG Connections -->
+                <svg class="iso-connections" viewBox="0 0 800 600">
+                  <path d="M 400 120 L 400 220 M 400 220 L 220 220 L 220 280 M 400 220 L 580 220 L 580 280" stroke="rgba(56, 189, 248, 0.4)" stroke-width="2" fill="none" stroke-dasharray="6,4" />
+                  <path d="M 220 400 L 220 480 M 580 400 L 580 480 M 400 220 L 400 480" stroke="rgba(56, 189, 248, 0.4)" stroke-width="2" fill="none" stroke-dasharray="6,4" />
+                  <!-- Animated pulses (dots) on paths -->
+                  <circle cx="400" cy="120" r="4" fill="#38bdf8" class="pulse-dot" style="--delay: 0s; --path: 'M 400 120 L 400 220 L 220 220 L 220 280'" />
+                  <circle cx="400" cy="120" r="4" fill="#38bdf8" class="pulse-dot" style="--delay: 1s; --path: 'M 400 120 L 400 220 L 580 220 L 580 280'" />
+                  <circle cx="400" cy="120" r="4" fill="#38bdf8" class="pulse-dot" style="--delay: 2s; --path: 'M 400 120 L 400 480'" />
+                </svg>
+
+                <!-- 1. AWS Cloud Top -->
+                <div class="iso-card aws-cloud">
+                  <i class="fab fa-aws"></i>
+                  <span>AWS CLOUD</span>
                 </div>
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+
+                <!-- 2. Dev Flow -->
+                <div class="iso-card dev-flow">
+                  <div class="card-title">DEVELOPER</div>
+                  <div class="step"><i class="fas fa-code"></i> CODE</div>
+                  <div class="step"><i class="fab fa-github"></i> REPOSITORY</div>
                 </div>
+
+                <!-- 3. CI/CD Center -->
+                <div class="iso-card cicd-flow">
+                  <div class="card-title">CI/CD PIPELINE</div>
+                  <div class="flow-steps">
+                    <div class="step"><i class="fas fa-cube"></i> BUILD</div>
+                    <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                    <div class="step"><i class="fas fa-check-circle"></i> TEST</div>
+                    <div class="arrow"><i class="fas fa-chevron-right"></i></div>
+                    <div class="step"><i class="fas fa-rocket"></i> DEPLOY</div>
+                  </div>
+                  <div class="tech-icons">
+                    <span><i class="fab fa-github"></i> Actions</span>
+                    <span><i class="fab fa-docker"></i> Docker</span>
+                    <span><i class="fas fa-cogs"></i> Terraform</span>
+                    <span><i class="fas fa-shield-alt"></i> Security</span>
+                  </div>
+                </div>
+
+                <!-- 4. Deployment Right -->
+                <div class="iso-card deployment-flow">
+                  <div class="card-title">DEPLOYMENT</div>
+                  <div class="step"><i class="fas fa-dharmachakra"></i> KUBERNETES</div>
+                  <div class="step"><i class="fas fa-server"></i> EC2 INSTANCES</div>
+                  <div class="step sub"><i class="fas fa-arrows-alt-v"></i> AUTO SCALING</div>
+                </div>
+
+                <!-- 5. Monitoring Bottom Left -->
+                <div class="iso-card monitoring-flow">
+                  <div class="card-title">MONITORING & LOGGING</div>
+                  <div class="tech-icons">
+                    <span><i class="fas fa-chart-line"></i> CloudWatch</span>
+                    <span><i class="fas fa-fire"></i> Prometheus</span>
+                    <span><i class="fas fa-chart-pie"></i> Grafana</span>
+                  </div>
+                </div>
+
+                <!-- 6. Storage Bottom Right -->
+                <div class="iso-card storage-flow">
+                  <div class="card-title">STORAGE</div>
+                  <div class="tech-icons">
+                    <span><i class="fas fa-hdd"></i> S3 Bucket</span>
+                    <span><i class="fas fa-database"></i> RDS Database</span>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Khaja Shamsuddin Ahmed. All rights reserved.</p>
-                </div>
-                <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/khaja-shamsuddin-ahmed" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/k-shamsuddin/" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:k.shamsuddin.a@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="mono-label reveal">about the engineer</div>
+      <h2 class="section-heading reveal">No manual intervention.<br>A pipeline for everything.</h2>
+      <div class="about-grid">
+        <div class="card reveal">
+          <p class="about-body">
+            Khaja Shamsuddin Ahmed is a Cloud &amp; DevOps Engineer focused on building scalable,
+            automated, and reliable infrastructure. With hands-on experience at V2R Technologies,
+            he delivers end-to-end solutions from provisioning AWS environments with Terraform to
+            orchestrating containers on Kubernetes. His long-term goal is to grow into a Cloud
+            Architect role — designing systems that empower engineering teams at scale.
+          </p>
         </div>
-    </footer>
+        <div class="card reveal">
+          <ul class="about-list">
+            <li>1+ year of hands-on Cloud &amp; DevOps experience</li>
+            <li>Proficient with AWS — EC2, S3, IAM, VPC, Route53, RDS, ELB</li>
+            <li>CI/CD pipelines with Jenkins, GitHub Actions — cut deploy time to &lt;5 min</li>
+            <li>Infrastructure as Code via Terraform; config management via Ansible</li>
+            <li>Containerized workloads with Docker, deployed on EKS/Kubernetes</li>
+            <li>Monitoring with CloudWatch; scripting with Bash; code quality via SonarQube</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stat-row reveal">
+        <div class="stat-card">
+          <div class="stat-num">1+</div>
+          <div class="stat-label">years exp.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">certs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">projects</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-    <script>
-  // same logic as before, plus icon update
-  document.addEventListener("DOMContentLoaded", () => {
-    const currentTheme = localStorage.getItem("theme") || "light";
-    setTheme(currentTheme);
-  });
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="mono-label reveal">technical skills</div>
+      <h2 class="section-heading reveal">The stack.<br>The tools. The craft.</h2>
+      <div class="skills-grid">
 
-  function toggleTheme() {
-    const newTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-  }
+        <div class="card reveal">
+          <div class="skill-card-header">
+            <div class="skill-cat-dot" style="background:#f97316;"></div>
+            <span class="skill-cat-label">cloud platforms</span>
+          </div>
+          <div class="skill-cat-title">Cloud Platforms</div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
+            <span class="skill-tag">EC2</span>
+            <span class="skill-tag">S3</span>
+            <span class="skill-tag">IAM</span>
+            <span class="skill-tag">VPC</span>
+            <span class="skill-tag">Route53</span>
+            <span class="skill-tag">RDS</span>
+            <span class="skill-tag">ELB</span>
+            <span class="skill-tag">CloudWatch</span>
+          </div>
+        </div>
 
-  function setTheme(theme) {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
+        <div class="card reveal">
+          <div class="skill-card-header">
+            <div class="skill-cat-dot" style="background:#06b6d4;"></div>
+            <span class="skill-cat-label">devops tools</span>
+          </div>
+          <div class="skill-cat-title">DevOps Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-jenkins"></i> Jenkins</span>
+            <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Ansible</span>
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">SonarQube</span>
+          </div>
+        </div>
 
-    // change icon
-    const icon = document.querySelector('#theme-toggle-btn i');
-    if (theme === "dark") {
-      icon.classList.remove('fa-sun');
-      icon.classList.add('fa-moon');
-    } else {
-      icon.classList.remove('fa-moon');
-      icon.classList.add('fa-sun');
-    }
-  }
-</script>
-<!-- WhatsApp Floating Button -->
-<div class="fixed-whatsapp">
-  <a href="https://wa.me/971542350052?text=Hey%20Khaja%20Shamsuddin!" target="_blank">
-    <button class="whatsapp-btn">
-      <i class="fab fa-whatsapp"></i> Chat with me
-    </button>
-  </a>
-</div>
+        <div class="card reveal">
+          <div class="skill-card-header">
+            <div class="skill-cat-dot" style="background:#a855f7;"></div>
+            <span class="skill-cat-label">development &amp; os</span>
+          </div>
+          <div class="skill-cat-title">Development &amp; OS</div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
+            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">Apache</span>
+            <span class="skill-tag">Windows Server</span>
+          </div>
+        </div>
 
-<style>
-.fixed-whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
+        <div class="card reveal">
+          <div class="skill-card-header">
+            <div class="skill-cat-dot" style="background:#22c55e;"></div>
+            <span class="skill-cat-label">methodologies</span>
+          </div>
+          <div class="skill-cat-title">Practices</div>
+          <div class="skill-tags">
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">IaC</span>
+            <span class="skill-tag">GitOps</span>
+            <span class="skill-tag">Agile</span>
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">HA Architecture</span>
+            <span class="skill-tag">DNS Management</span>
+          </div>
+        </div>
 
-.whatsapp-btn {
-  background-color: #25D366;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 50px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
+      </div>
+    </div>
+  </section>
 
-.whatsapp-btn:hover {
-  background-color: #1ebe5d;
-}
-</style>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="mono-label reveal">featured work</div>
+      <h2 class="section-heading reveal">Built and shipped.<br><em>No drama.</em></h2>
+      <div class="projects-list">
 
+        <div class="card reveal">
+          <div class="project-meta">project · healthcare · 2024</div>
+          <div class="project-title">Pace Healthcare App — Cloud Infrastructure</div>
+          <p class="project-desc">
+            Designed and deployed a secure, scalable AWS cloud infrastructure for a comprehensive healthcare application.
+            Leveraged EC2, RDS (MySQL), S3, VPC, and ELB with high availability and fault tolerance. Used Terraform for
+            IaC, Ansible for automated configuration, Docker for containerization, Route 53 for DNS, and IAM for strict
+            access control. Significantly improved deployment efficiency and security posture.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Terraform</span>
+            <span class="tech-tag">Ansible</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Kubernetes</span>
+            <span class="tech-tag">Route 53</span>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="project-meta">project · ci/cd · 2024</div>
+          <div class="project-title">CI/CD Pipeline — Java Application</div>
+          <p class="project-desc">
+            Built a robust CI/CD pipeline using Jenkins, GitHub, Maven, Docker, and AWS EC2 to automate the full
+            build-test-deploy lifecycle of a Java application. Set up automated testing, code quality checks, and
+            environment-based approvals. Implemented versioned builds and rollback mechanisms. Result: deployment
+            time reduced from 30 minutes to under 5 minutes.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Jenkins</span>
+            <span class="tech-tag">GitHub</span>
+            <span class="tech-tag">Maven</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">EC2</span>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="project-meta">project · support · 2024</div>
+          <div class="project-title">Cloud Tech Support — L1 Field Operations</div>
+          <p class="project-desc">
+            Delivered first-level technical support across Windows, Linux, and MacOS environments. Resolved issues
+            related to software, hardware, and cloud-based systems. Performed OS installation, configuration, and
+            updates. Maintained IT infrastructure addressing incidents involving system performance, network
+            connectivity, and user access. Maintained high user satisfaction through structured troubleshooting.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Linux</span>
+            <span class="tech-tag">Windows</span>
+            <span class="tech-tag">Diagnostics</span>
+            <span class="tech-tag">Troubleshooting</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="mono-label reveal">experience</div>
+      <h2 class="section-heading reveal">The professional<br>journey so far.</h2>
+
+      <div class="exp-item reveal">
+        <div class="exp-date">Jul 2024 – Present</div>
+        <div class="exp-role">Cloud &amp; DevOps Engineer</div>
+        <div class="exp-company">V2R Technologies Pvt Ltd</div>
+        <div class="exp-body">
+          <p>Delivering scalable cloud infrastructure and DevOps solutions to improve deployment speed, reliability, and workflow efficiency.</p>
+          <ul>
+            <li>Designed and deployed AWS infrastructure using Terraform — EC2, RDS, ELB, Route 53</li>
+            <li>Built CI/CD pipelines with Jenkins and GitHub Actions, cutting deploy time from 30 min to &lt;5 min</li>
+            <li>Created Ansible playbooks for consistent server provisioning and application deployment</li>
+            <li>Containerized applications with Docker, deployed on EC2 and Kubernetes (EKS)</li>
+            <li>Managed high availability and DNS routing via AWS Route 53</li>
+            <li>Collaborated with dev teams to streamline agile releases and improve incident response</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subsection-label reveal">certifications</div>
+
+      <div class="certs-list">
+        <div class="cert-item reveal">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-name">AWS Cloud &amp; DevOps Fundamentals</div>
+            <div class="cert-issuer">Cloud@247.ai</div>
+          </div>
+        </div>
+        <div class="cert-item reveal">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-name">
+              <a href="https://www.credly.com/badges/2614d014-4d10-4113-90ed-ae664fb6df87" target="_blank" rel="noopener">
+                AWS Cloud Quest: Cloud Practitioner ↗
+              </a>
+            </div>
+            <div class="cert-issuer">AWS Skill Builder</div>
+          </div>
+        </div>
+        <div class="cert-item reveal">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-name">
+              <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_7Fy5qqEM8v3C2S9TP_1752053913058_completion_certificate.pdf" target="_blank" rel="noopener">
+                Data Analytics Virtual Program ↗
+              </a>
+            </div>
+            <div class="cert-issuer">Deloitte × Forage</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection-label reveal">education</div>
+
+      <div class="edu-item reveal">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div>
+          <div class="edu-title">B.Com (Computer Applications)</div>
+          <div class="edu-sub">Osmania University · 2024</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="mono-label reveal">get in touch</div>
+      <h2 class="section-heading reveal">A door is open.<br>Let's talk.</h2>
+      <div class="contact-links reveal">
+        <a href="mailto:k.shamsuddin.a@gmail.com" class="contact-pill">
+          <i class="fas fa-envelope"></i> k.shamsuddin.a@gmail.com
+        </a>
+        <a href="tel:+971542350052" class="contact-pill">
+          <i class="fas fa-phone"></i> +971 54-235-0052
+        </a>
+        <a href="https://www.linkedin.com/in/khaja-shamsuddin-ahmed" target="_blank" class="contact-pill">
+          <i class="fab fa-linkedin-in"></i> khaja on LinkedIn
+        </a>
+        <a href="https://wa.me/971542350052?text=Hey%20Khaja%20Shamsuddin!" target="_blank" class="contact-pill">
+          <i class="fab fa-whatsapp"></i> chat on WhatsApp
+        </a>
+        <span class="contact-pill" style="cursor:default; pointer-events:none;">
+          <i class="fas fa-map-marker-alt"></i> Dubai, UAE
+        </span>
+      </div>
+  </section>
+
+  <!-- FOOTER / COLOPHON -->
+  <footer>
+    <div class="container">
+      <div class="colophon-label">colophon</div>
+      <p class="footer-body">
+        This portfolio belongs to <strong>Khaja Shamsuddin Ahmed</strong> — Cloud &amp; DevOps Engineer
+        based in Dubai, UAE. Built with vanilla HTML, CSS, and JS. No frameworks, no fuss.
+      </p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/khaja-shamsuddin-ahmed" target="_blank" class="social-pill">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a href="https://github.com/k-shamsuddin/" target="_blank" class="social-pill">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="mailto:k.shamsuddin.a@gmail.com" class="social-pill">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+      <p class="footer-copy">© 2025 · Khaja Shamsuddin Ahmed · All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
 </body>
 </html>
