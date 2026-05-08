@@ -713,6 +713,40 @@ section + section { border-top: 1px solid var(--border); }
   border-radius: var(--radius);
   padding: 20px 16px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card-link {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: border-color var(--transition), transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.stat-card-link:hover {
+  border-color: rgba(79, 142, 247, 0.45);
+  transform: translateY(-4px) scale(1.02);
+  background: rgba(79, 142, 247, 0.07);
+  box-shadow: 0 8px 24px rgba(79, 142, 247, 0.15);
+}
+
+.stat-card-link:hover .stat-num {
+  color: #93c5fd;
+}
+
+.stat-card-link:hover .stat-hint {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.stat-hint {
+  font-size: 11px;
+  color: var(--accent);
+  margin-top: 8px;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .stat-num {
@@ -721,6 +755,7 @@ section + section { border-top: 1px solid var(--border); }
   font-weight: 700;
   color: var(--accent);
   line-height: 1;
+  transition: color 0.3s ease;
 }
 
 .stat-label {
@@ -951,6 +986,89 @@ section + section { border-top: 1px solid var(--border); }
 .cert-name a:hover { text-decoration: underline; }
 .cert-issuer { font-family: var(--mono); font-size: 11px; color: var(--text-faint); margin-top: 2px; }
 
+.cert-link {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.cert-link:hover {
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateX(4px);
+}
+
+/* ==========================================
+   IMAGE MODAL
+   ========================================== */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 9999; 
+  padding-top: 60px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(2, 6, 23, 0.95); 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  border: 1px solid var(--border);
+  transform: scale(0.9);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  object-fit: contain;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+}
+
+#modal-caption {
+  margin: 16px auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.modal-close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  color: var(--text-dim);
+  font-size: 40px;
+  font-weight: 300;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .edu-item {
   display: flex;
   gap: 14px;
@@ -994,7 +1112,7 @@ section + section { border-top: 1px solid var(--border); }
   text-decoration: none;
   border: 1px solid var(--border);
   padding: 10px 18px;
-  border-radius: 8px;
+  border-radius: 18px 24px 14px 22px / 20px 18px 22px 16px; /* Cloud-like organic shape */
   transition: all var(--transition);
   width: fit-content;
 }
@@ -1003,6 +1121,8 @@ section + section { border-top: 1px solid var(--border); }
   color: var(--text);
   border-color: var(--border-hover);
   background: rgba(255,255,255,0.03);
+  border-radius: 22px 16px 20px 18px / 16px 22px 18px 20px; /* Slight shape shift on hover */
+  transform: translateY(-2px);
 }
 
 .contact-pill i { font-size: 14px; color: var(--text-faint); }

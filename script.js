@@ -181,3 +181,47 @@ if (profileCard && profileInner && profileGlare) {
     profileGlare.style.opacity = '0';
   });
 }
+
+/* ==========================================
+   CERTIFICATE MODAL
+   ========================================== */
+const certModal = document.getElementById('cert-modal');
+const modalImg = document.getElementById('modal-img');
+const modalCaption = document.getElementById('modal-caption');
+const modalClose = document.querySelector('.modal-close');
+const certLinks = document.querySelectorAll('.cert-link');
+
+if (certModal && modalImg) {
+  certLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const imgSrc = link.getAttribute('data-src');
+      const captionText = link.getAttribute('data-caption');
+      
+      modalImg.src = imgSrc;
+      // Fallback if image not found to let user know they can add it
+      modalImg.onerror = () => {
+        modalImg.src = 'https://via.placeholder.com/800x600/0a1628/d4dff4?text=Add+Certificate+Image+Here';
+      };
+      
+      modalCaption.textContent = captionText || '';
+      certModal.classList.add('show');
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    certModal.classList.remove('show');
+  });
+
+  certModal.addEventListener('click', (e) => {
+    if (e.target === certModal) {
+      certModal.classList.remove('show');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && certModal.classList.contains('show')) {
+      certModal.classList.remove('show');
+    }
+  });
+}

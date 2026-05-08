@@ -205,18 +205,21 @@ His long-term goal is a Cloud Architect role — designing systems that let engi
       </div>
       
       <div class="stat-row reveal">
-        <div class="stat-card">
+        <a href="#experience" class="stat-card stat-card-link" aria-label="View experience section">
           <div class="stat-num">2+</div>
           <div class="stat-label">years exp.</div>
-        </div>
-        <div class="stat-card">
+          <div class="stat-hint"><i class="fas fa-arrow-right"></i></div>
+        </a>
+        <a href="#certifications" class="stat-card stat-card-link" aria-label="View certifications section">
           <div class="stat-num">5+</div>
           <div class="stat-label">certs</div>
-        </div>
-        <div class="stat-card">
+          <div class="stat-hint"><i class="fas fa-arrow-right"></i></div>
+        </a>
+        <a href="#projects" class="stat-card stat-card-link" aria-label="View projects section">
           <div class="stat-num">3+</div>
           <div class="stat-label">projects</div>
-        </div>
+          <div class="stat-hint"><i class="fas fa-arrow-right"></i></div>
+        </a>
       </div>
     </div> <!-- end container -->
   </section>
@@ -408,43 +411,42 @@ Built a complete Ansible automation suite to provision and configure Linux serve
         </div>
       </div>
 
-      <div class="subsection-label reveal">certifications</div>
+      <div class="subsection-label reveal" id="certifications">certifications</div>
 
       <div class="certs-list">
-        <div class="cert-item reveal">
+        <div class="cert-item reveal cert-link" data-src="image/cert-aws.jpg" data-caption="AWS Certified Solutions Architect – Associate">
           <div class="cert-dot"></div>
           <div>
-            <div class="cert-name">AWS Certified Solutions Architect – Associate</div>
+            <div class="cert-name">AWS Certified Solutions Architect – Associate ↗</div>
             <div class="cert-issuer">Amazon Web Services</div>
           </div>
         </div>
-        <div class="cert-item reveal">
+        <div class="cert-item reveal cert-link" data-src="image/cert-aws-devops.png" data-caption="AWS Cloud &amp; DevOps Fundamentals">
           <div class="cert-dot"></div>
           <div>
-            <div class="cert-name">AWS Cloud &amp; DevOps Fundamentals</div>
+            <div class="cert-name">AWS Cloud &amp; DevOps Fundamentals ↗</div>
             <div class="cert-issuer">Cloud247.ai</div>
           </div>
         </div>
-        <div class="cert-item reveal">
+        <div class="cert-item reveal cert-link" data-src="image/cert-aws-quest.png" data-caption="AWS Cloud Quest: Cloud Practitioner">
           <div class="cert-dot"></div>
           <div>
-            <div class="cert-name">
-              <a href="https://www.credly.com/badges/2614d014-4d10-4113-90ed-ae664fb6df87" target="_blank" rel="noopener">
-                AWS Cloud Quest: Cloud Practitioner ↗
-              </a>
-            </div>
+            <div class="cert-name">AWS Cloud Quest: Cloud Practitioner ↗</div>
             <div class="cert-issuer">AWS Skill Builder</div>
           </div>
         </div>
-        <div class="cert-item reveal">
+        <div class="cert-item reveal cert-link" data-src="image/deloitte-cert.png" data-caption="Data Analytics Virtual Program - Deloitte × Forage">
           <div class="cert-dot"></div>
           <div>
-            <div class="cert-name">
-              <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_7Fy5qqEM8v3C2S9TP_1752053913058_completion_certificate.pdf" target="_blank" rel="noopener">
-                Data Analytics Virtual Program ↗
-              </a>
-            </div>
+            <div class="cert-name">Data Analytics Virtual Program ↗</div>
             <div class="cert-issuer">Deloitte × Forage</div>
+          </div>
+        </div>
+        <div class="cert-item reveal cert-link" data-src="image/microsoft-intune-cert.jpg" data-caption="Microsoft InTune - An Intro to Mobile Device Management">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-name">Microsoft InTune - An Intro to Mobile Device Management ↗</div>
+            <div class="cert-issuer">Udemy</div>
           </div>
         </div>
       </div>
@@ -510,6 +512,13 @@ Built a complete Ansible automation suite to provision and configure Linux serve
   </footer>
 
 
+
+  <!-- IMAGE MODAL -->
+  <div id="cert-modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Certificate Image">
+    <div id="modal-caption"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
